@@ -2,6 +2,12 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <title>Menu Dropdown Horizontal - Linha de Código</title>
+     <!-- Aqui chamamos o nosso arquivo css externo -->
+    <link rel="stylesheet" type="text/css"  href="estilo.css" />
+    <!--[if lte IE 8]>
+ <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
     <title>Oscar 2021</title>
 
     <link rel="stylesheet" href="reset.css">
@@ -10,7 +16,19 @@
 </head>
 
 <body>
-
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contato.html" target="_blank">Contato</a></li>
+                    <!--<li><a href="#">O que fazemos?</a>
+                       <ul>
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">SEO</a></li>
+                            <li><a href="#">Design</a></li>
+                         </ul>
+                  </li>-->
+          </ul>
+    </nav>
     <!--<div class="nav-toggle">
         <label for="navicon" class="hamburger">
            <span></span>
@@ -26,7 +44,7 @@
 
     <nav class="caixa-nav">
         <ul class="lista-indicados">
-            <li class="indicados">Melhor Filme</li>
+            <li class="indicados"><a href="melhor-filme.html" target="_blank">Melhor Filme</a></li>
             <li class="indicados">Melhor Direção</li>
             <li class="indicados">Melhor Ator</li>
             <li class="indicados">Melhor Atriz</li>

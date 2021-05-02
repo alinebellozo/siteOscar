@@ -8,32 +8,62 @@ body {
     font-family: 'Titillium Web', sans-serif;
 }
 
-/*.nav-toggle {
-    display: block;
-    padding: 10px 10px 15px 10px;
-    background: #fff;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 50;
+/* começo menu dropdown*/
+*{margin: 0; padding: 0;}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style:none;
+    border:1px solid #c0c0c0;
+    float:left;
+}
+
+.menu li {
+    position:relative;
+    float:left;
+    border-right:1px dotted #c0c0c0;
     }
-    .hamburger {
-    width: 1.08em;
-    position: relative;
-    display: inline-block;
-    height: 0.6em;
-    font-size: 1.2em;
-    background: #fff;
+
+.menu li a {
+    color:#333;
+    text-decoration:none;
+    padding:5px 10px;
+    display:block;
+    background-color: gold;
+}
+
+.menu li a:hover {
+    background:#333;
+    color:#fff;
+    -moz-box-shadow:0 3px 10px 0 #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px yellow;
+}
+
+.menu li ul {
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color: white;
+    display:none;
     }
-    .hamburger span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #cdcdcd;
-    border-radius: 3px;
-    }*/
+
+.menu li:hover ul, .menu li.over ul {
+    display:block;
+}
+
+.menu li ul li {
+    border:1px solid #c0c0c0;
+    display:block;
+    width:150px;
+}
+
+/* fim menu dropdown*/
 
 header {
     background: url(img/estrelas.jpg);
@@ -67,6 +97,10 @@ header {
     padding: 100px;
     font-size: 20px;
     text-shadow: 1px 1px 5px rgb(247, 242, 0);
+}
+
+.indicados a {
+    text-decoration: none;
 }
 
 .indicados:before {
